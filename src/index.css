@@ -14,6 +14,10 @@
   --color-sage: #5b6551;
   --color-line: #e4dac5;
   --color-badge: #eadfc8;
+  --color-forest-deep: #263b22;
+  --color-forest-line: #3d5636;
+  --color-forest-muted: #c7cfbe;
+  --color-error: #c0442c;
 
   --font-display: 'Spectral', Georgia, serif;
   --font-sans: 'Work Sans', system-ui, sans-serif;

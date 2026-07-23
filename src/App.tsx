@@ -1,5 +1,8 @@
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
+import { Testimonials } from './components/Testimonials'
+import { SignupForm } from './components/SignupForm'
+import { Footer } from './components/Footer'
 
 function App() {
   return (
@@ -7,7 +10,10 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <Testimonials />
+        <SignupForm />
       </main>
+      <Footer />
     </div>
   )
 }
