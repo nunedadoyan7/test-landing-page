@@ -42,3 +42,60 @@ export const hero = {
     badge: { label: 'Next delivery', value: 'Thu, this week' },
   },
 } as const
+
+export interface Plan {
+  name: string
+  serves: string
+  price: string
+  itemsLine: string
+  highlighted: boolean
+}
+
+export const pricing = {
+  eyebrow: 'Pricing',
+  heading: 'Pick a box, change it anytime',
+  subheading: 'Prices per weekly delivery. Free delivery on every box.',
+  plans: [
+    {
+      name: 'Small',
+      serves: 'Serves 1–2 people',
+      price: '$34',
+      itemsLine: '8–10 seasonal items · fruit + veg',
+      highlighted: false,
+    },
+    {
+      name: 'Medium',
+      serves: 'Serves 2–4 people',
+      price: '$52',
+      itemsLine: '12–15 items · add eggs & dairy',
+      highlighted: true,
+    },
+    {
+      name: 'Family',
+      serves: 'Serves 4–6 people',
+      price: '$78',
+      itemsLine: '18–22 items · full pantry add-ons',
+      highlighted: false,
+    },
+  ] satisfies Plan[],
+} as const
+
+export const signup = {
+  heading: 'See if we deliver to you',
+  blurb:
+    'Enter your email and ZIP to check availability and claim $20 off your first box. No commitment to start.',
+  emailLabel: 'Email address',
+  emailPlaceholder: 'you@email.com',
+  zipLabel: 'ZIP code',
+  zipPlaceholder: 'e.g. 97201',
+  submitLabel: 'Check availability',
+  finePrint: 'Pause or cancel anytime. No card required to check.',
+  errors: {
+    email: 'Please enter a valid email address.',
+    zip: 'Please enter a valid 5-digit ZIP code.',
+  },
+  success: {
+    heading: "You're on the list!",
+    resetLabel: 'Check another address',
+  },
+} as const
