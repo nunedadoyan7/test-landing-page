@@ -19,7 +19,15 @@ describe('Hero', () => {
   it('renders the primary CTA linking to signup', () => {
     render(<Hero />)
     const cta = screen.getByRole('link', { name: hero.primaryCta.label })
+    expect(cta).toBeInTheDocument()
     expect(cta).toHaveAttribute('href', hero.primaryCta.href)
+  })
+
+  it('renders the secondary CTA linking to the how-it-works section', () => {
+    render(<Hero />)
+    const cta = screen.getByRole('link', { name: hero.secondaryCta.label })
+    expect(cta).toBeInTheDocument()
+    expect(cta).toHaveAttribute('href', hero.secondaryCta.href)
   })
 
   it('renders the eyebrow badge and trust stats', () => {
@@ -31,6 +39,13 @@ describe('Hero', () => {
       // readers and once in the visible <dd>.
       expect(screen.getAllByText(stat.label).length).toBeGreaterThan(0)
     }
+  })
+
+  it('exposes the hero section with an accessible label', () => {
+    render(<Hero />)
+    expect(
+      screen.getByRole('region', { name: hero.headline }),
+    ).toBeInTheDocument()
   })
 
   it('renders the produce-box hero visual with an accessible label', () => {
