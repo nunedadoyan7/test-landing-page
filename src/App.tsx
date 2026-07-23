@@ -1,5 +1,7 @@
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
+import { HowItWorks } from './components/HowItWorks'
+import { WhatsInBox } from './components/WhatsInBox'
 
 function App() {
   return (
@@ -7,6 +9,8 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <HowItWorks />
+        <WhatsInBox />
       </main>
     </div>
   )
