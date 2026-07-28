@@ -42,3 +42,17 @@ export const hero = {
     badge: { label: 'Next delivery', value: 'Thu, this week' },
   },
 } as const
+
+export const footer = {
+  newsletter: {
+    heading: 'Fresh news, no spam.',
+    description:
+      'Join the Harvest list for seasonal recipes, farm stories, and the occasional first-box treat.',
+    emailLabel: 'Email address',
+    placeholder: 'you@example.com',
+    submitLabel: 'Subscribe',
+    invalidMessage: 'Please enter a valid email address.',
+    successMessage: 'Thanks for subscribing — check your inbox to confirm.',
+  },
+  copyright: `© ${new Date().getFullYear()} ${brand.name}. Farm-fresh, delivered.`,
+} as const
