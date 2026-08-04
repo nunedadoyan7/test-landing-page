@@ -1,5 +1,6 @@
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
+import { Copyright } from './components/Copyright'
 
 function App() {
   return (
@@ -8,6 +9,9 @@ function App() {
       <main>
         <Hero />
       </main>
+      <footer>
+        <Copyright />
+      </footer>
     </div>
   )
 }

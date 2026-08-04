@@ -26,6 +26,18 @@ export const nav = {
   cta: { label: 'Start your first box', href: '#signup' },
 } as const
 
+export const copyright = {
+  // The legal entity displayed in the copyright line; the year is derived at
+  // render time so the notice never goes stale.
+  entity: 'Harvest Foods, Inc.',
+  rights: 'All rights reserved.',
+  links: [
+    { label: 'Privacy', href: '#' },
+    { label: 'Terms', href: '#' },
+    { label: 'Delivery areas', href: '#' },
+  ],
+} as const
+
 export const hero = {
   eyebrow: 'Sourced from farms within 100 miles',
   headline: 'Farm-fresh groceries, delivered on your schedule.',
