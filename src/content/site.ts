@@ -42,3 +42,7 @@ export const hero = {
     badge: { label: 'Next delivery', value: 'Thu, this week' },
   },
 } as const
+
+export const footer = {
+  copyright: '© 2026 Harvest. All rights reserved.',
+} as const
