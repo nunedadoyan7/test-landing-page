@@ -7,6 +7,8 @@ import { navLinks, nav } from '../content/site'
  * Sticky, translucent top navigation. On mobile the primary links collapse
  * behind a toggle while the CTA stays visible.
  */
+// Renders the Harvest site header: logo, primary nav links, sign-in/CTA buttons,
+// and a responsive mobile menu that toggles the collapsed navigation.
 export function Navbar() {
   const [open, setOpen] = useState(false)
 
