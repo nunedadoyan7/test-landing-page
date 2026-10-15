@@ -8,6 +8,9 @@ function App() {
       <main>
         <Hero />
       </main>
+      <footer className="py-4 text-center text-sage text-sm">
+        Last updated: October 2026
+      </footer>
     </div>
   )
 }
