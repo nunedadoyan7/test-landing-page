@@ -20,6 +20,9 @@ interface ApiResponse {
 /**
  * Connect-style middleware serving the produce categories endpoint.
  *
+ * Returns the list of available produce categories for the Harvest storefront.
+ * Static for now — no database lookup.
+ *
  * Exported for unit testing; typed structurally so it needs no `@types/node`.
  */
 export function produceCategoriesHandler(
