@@ -34,6 +34,8 @@ src/
     Navbar.tsx      Sticky navigation with responsive mobile menu
     Hero.tsx        Hero section (headline, CTAs, stats, visual)
     ProduceBox.tsx  On-brand SVG hero illustration
+    WhyHarvest.tsx  Differentiators grid (icon / heading / description)
+    Pricing.tsx     3-tier pricing comparison (Small / Medium / Family)
   content/
     site.ts         Centralized copy + navigation config
   App.tsx           Page composition
@@ -46,6 +48,12 @@ src/
   "Start your first box" CTA. Collapses to a toggle menu on mobile.
 - **Hero** — eyebrow badge, serif headline, subheadline, primary + secondary
   CTAs, trust stats, and a produce-box visual with a floating delivery card.
+- **Why Harvest** — four differentiator cards (local sourcing, customization,
+  no commitment, flexible schedule), each with an icon, heading, and short
+  description.
+- **Pricing** — three-tier comparison (Small / Medium / Family box) with plan
+  name, price, and key features; the Medium tier is highlighted as "Most
+  popular".
 
 ## Design tokens
 
