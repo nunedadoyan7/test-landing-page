@@ -42,3 +42,37 @@ export const hero = {
     badge: { label: 'Next delivery', value: 'Thu, this week' },
   },
 } as const
+
+export interface HowStep {
+  step: string
+  title: string
+  description: string
+}
+
+export const howItWorks = {
+  id: 'how',
+  eyebrow: 'How it works',
+  headline: 'Fresh food, three simple steps.',
+  subheadline:
+    'Build a box around your week, we harvest and pack it, and it lands on your doorstep — no store trip required.',
+  steps: [
+    {
+      step: '01',
+      title: 'Pick your box',
+      description:
+        'Choose a size and tell us what you love. Swap, add, or skip items anytime before your cutoff.',
+    },
+    {
+      step: '02',
+      title: 'We harvest & pack',
+      description:
+        'Partner farms within 100 miles pick to order, then we pack everything into your box the same day.',
+    },
+    {
+      step: '03',
+      title: 'Delivered to you',
+      description:
+        'Track your delivery and enjoy farm-fresh produce at your door — pause or reschedule whenever you need.',
+    },
+  ] satisfies readonly HowStep[],
+} as const
