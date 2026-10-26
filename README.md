@@ -28,6 +28,9 @@ npm run typecheck # type-check without emitting
 
 ```
 src/
+  api/
+    produceCategories.ts        Produce category data + response handler
+    produceCategoriesPlugin.ts  Vite middleware serving the categories API
   components/     Presentational React components
     Button.tsx      Reusable pill button (primary / forest / ghost)
     Logo.tsx        Harvest monogram + wordmark
@@ -39,6 +42,24 @@ src/
   App.tsx           Page composition
   index.css         Tailwind import + Harvest design tokens
 ```
+
+## API
+
+A small Vite middleware plugin exposes a read-only endpoint used by the
+"What's inside" section. It is available on both the dev server (`npm run dev`)
+and the preview server (`npm run preview`).
+
+| Method | Path                      | Response                                   |
+| ------ | ------------------------- | ------------------------------------------ |
+| `GET`  | `/api/produce-categories` | `200` — JSON array of produce category names |
+
+```bash
+curl http://localhost:5173/api/produce-categories
+# ["Fruits","Vegetables","Herbs","Dairy","Bakery","Pantry"]
+```
+
+Any non-`GET` method returns `405 Method Not Allowed`. The category list is the
+single source of truth in `src/api/produceCategories.ts`.
 
 ## Implemented sections
 
