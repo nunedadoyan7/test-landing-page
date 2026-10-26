@@ -33,6 +33,8 @@ src/
     Logo.tsx        Harvest monogram + wordmark
     Navbar.tsx      Sticky navigation with responsive mobile menu
     Hero.tsx        Hero section (headline, CTAs, stats, visual)
+    HowItWorks.tsx  3-step "How it works" process
+    WhatsInBox.tsx  Produce-category showcase
     ProduceBox.tsx  On-brand SVG hero illustration
   content/
     site.ts         Centralized copy + navigation config
@@ -46,6 +48,11 @@ src/
   "Start your first box" CTA. Collapses to a toggle menu on mobile.
 - **Hero** — eyebrow badge, serif headline, subheadline, primary + secondary
   CTAs, trust stats, and a produce-box visual with a floating delivery card.
+- **How it works** — 3-step process (Choose your box → Customize → Delivered
+  weekly), each a numbered card with a short description.
+- **What's in a box** — deep-forest showcase of produce categories (leafy
+  greens, seasonal fruit, root veg, herbs, eggs & dairy, pantry staples) with
+  on-brand SVG placeholder art and label overlays.
 
 ## Design tokens
 
